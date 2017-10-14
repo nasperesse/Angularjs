@@ -1,0 +1,16 @@
+.childContainer {
+    position: relative;
+    background-color: red;
+    width: 40%;
+    height: 80px;
+    margin-top: 30px;
+    padding: 3px;
+
+}
+
+.parentContainer {
+    padding: 3%;
+    background-color: green;
+    width: 100%;
+    height: 240px;
+}

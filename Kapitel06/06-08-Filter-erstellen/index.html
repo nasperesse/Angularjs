@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <!-- This code is only meant for previewing your Reflow design. -->
+    <head>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta charset="utf-8">
+    <meta charset="utf-8">
+
+
+    </head>
+    <body>
+    <title>06-08-Filter-erstellen</title>
+	<div class="wrapper clearfix" >
+
+       <p class="theme">Eigner Währungsfilter</p>
+
+       <div class='container'>
+           <div class='content clearfix' ng-controller="ContentCtrl">
+
+               <p class="content-header">Preise</p>
+
+               <p class="content-text">
+               <form id="myForm" name="form1" method="post">
+                   <label for="price">Preis:</label>
+                   <input name="price" type="text" autofocus required id="price" form="myForm" ng-model="price" >
+               </form>
+               <br/>
+               <ul class="unstyled">
+                    <li>{{price}}</li>
+                    <li>{{price | currency}}</li>
+                    <li>{{price | euro}}</li>
+                    <li>{{price | euro : 0 }}</li>
+                    <li>{{price | euro : 1 }}</li>
+                    <li>{{price | euro : 2 }}</li>
+                    <li>{{price | euro : 3 }}</li>
+                    <li>{{price | euro : 4 }}</li>
+                    <li>{{price | euro : 5 }}</li>
+                    <li>{{price | euro : 0 : true }}</li>
+                    <li>{{price | euro : 1 : true }}</li>
+                    <li>{{price | euro : 1 : true }}</li>
+               </ul>
+
+               </p>
+
+           </div>
+       </div>
+
+	</div>
+
+
+
+    <script type="text/javascript" src="../../libs/angularjs/1.0.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/MainModule.js"></script>
+    <script type="text/javascript" src="js/ctrl/CtrlModule.js"></script>
+    <script type="text/javascript" src="js/filter/FilterModule.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+    </body>
+</html>

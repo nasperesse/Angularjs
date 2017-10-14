@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <!-- This code is only meant for previewing your Reflow design. -->
+    <head>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta charset="utf-8">
+    <meta charset="utf-8">
+
+
+    </head>
+    <body>
+    <title>06-01-Filter-limitTo</title>
+	<div class="wrapper clearfix" >
+
+       <p class="theme">Filter limitTo</p>
+
+       <div class='container'>
+           <div class='content clearfix' ng-controller="ContentCtrl">
+
+               <p class="content-header">Personen</p>
+
+               <p class="content-text">
+                   <ul class="unstyled">
+                       <li ng-repeat="person in persons | limitTo : 10"
+                           ng-class="getIteratingClass ($index, 'red-row', 'green-row', 'blue-row')">
+                           {{$index}} # {{person.firstName}} {{person.lastName}}
+                       </li>
+
+                   </ul>
+               </p>
+
+           </div>
+       </div>
+
+	</div>
+
+
+
+    <script type="text/javascript" src="../../libs/angularjs/1.0.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/MainModule.js"></script>
+    <script type="text/javascript" src="js/ctrl/CtrlModule.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+    </body>
+</html>

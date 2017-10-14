@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>04-05-Root-Scope</title>
+</head>
+<body>
+    <h1>Root Scope</h1>
+
+
+    <div ng-controller="Controller">
+
+        <h2>{{getHelloExp()}}</h2>
+        <h2>Version := {{version}}</h2>
+
+        <button ng-click="click()" ng-controller="ButtonController">{{label}}</button>
+
+    </div>
+
+    <script type="text/javascript" src="../../libs/angularjs/1.0.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/model/ModelModule.js"></script>
+    <script type="text/javascript" src="js/ctrl/CtrlModule.js"></script>
+    <script type="text/javascript" src="js/MainModule.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
