@@ -26,7 +26,16 @@ function Controller($log, Model, $scope) {
             Sex: $scope.sex,
             Adresse: $scope.adresse,
             Email: $scope.email
-        })
+        });
+
+        $scope.name = ""
+        $scope.alter =
+
+            $scope.adresse = ""
+
+        $scope.sex = ""
+
+        $scope.email = ""
 
     }
 }
