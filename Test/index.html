@@ -15,7 +15,8 @@
 
 <div ng-controller="Controller">
                        <h2 id="kunde_name"></h2>
-                       <h1>{{name}}</h1>
+                       <h1 class="popover-title">Willkommen bei der Verwaltung mithilfe Angularjs</h1>
+
 
 
     <form class="checkbox">
@@ -30,6 +31,8 @@
         <input type="text" ng-model="sex">
         <label class="control-label">Email</label>
         <input type="email" ng-model="email">
+        <br>
+        <p id="error"></p>
         <br>
         <input type="submit" ng-click="click()" value="Hizufügen" class="btn btn-success">
     </form>
@@ -52,7 +55,8 @@
             <td>{{date.Alter}}</td>
             <td>{{date.Adresse}}</td>
             <td>{{date.Sex}}</td>
-            <td>{{date.Email}}</td>
+            <td colspan="2">{{date.Email}}</td>
+            <td><input ng-click="remove()" class="btn-danger" type="submit" value="remove"></td>
         </tr>
 
 
@@ -70,6 +74,7 @@
     </table>
 
 
+    <div ng-bind-html-unsafe="test"></div>
 
 </div>
 

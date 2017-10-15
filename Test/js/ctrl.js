@@ -17,25 +17,37 @@ function Controller($log, Model, $scope) {
 
     $scope.email = ""
 
+    $scope.test = "<strong>je fait just un petit test</strong>"
+
+    $scope.remove = function () {
+
+
+
+    };
 
     $scope.click = function () {
 
-        $scope.daten.push({
-            Name: $scope.name,
-            Alter: $scope.alter,
-            Sex: $scope.sex,
-            Adresse: $scope.adresse,
-            Email: $scope.email
-        });
 
-        $scope.name = ""
-        $scope.alter =
+            $scope.daten.push({
+                Name: $scope.name,
+                Alter: $scope.alter,
+                Sex: $scope.sex,
+                Adresse: $scope.adresse,
+                Email: $scope.email
+            });
 
-            $scope.adresse = ""
+            $scope.name = "";
+            $scope.alter =
 
-        $scope.sex = ""
+                $scope.adresse = "";
 
-        $scope.email = ""
+            $scope.sex = "";
+
+            $scope.email = "";
+
+
+
+
 
     }
 }
